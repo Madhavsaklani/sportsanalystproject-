@@ -1,65 +1,90 @@
-IPL Best XI Analysis Dashboard (Power BI)
-Project Overview
+🏏 IPL Best XI Data Analytics Dashboard (Power BI)
+📌 Overview
 
-This project focuses on selecting a Best XI team using historical IPL data through data-driven analysis.
-The dashboard evaluates batsmen, bowlers, and all-rounders based on performance metrics such as runs, strike rate, wickets, and economy-related indicators.
+This project presents a data-driven IPL Best XI selection using historical IPL ball-by-ball and match data.
+Instead of subjective opinions, players are evaluated purely on performance metrics to build a balanced and impactful XI.
 
-The objective is to move beyond reputation-based selection and instead use impact-focused analytics.
+The analysis covers batsmen, bowlers, and all-rounders, combining batting impact, bowling effectiveness, and consistency.
 
-Dashboard Components
-Batsmen Analysis
--Total runs scored by each batsman
+🎯 Objective
+
+-To analyze IPL player performance using data analytics
+-To select a Best XI team based on measurable impact
+-To showcase sports analytics skills using Python & Power BI
+
+📊 Dashboard Highlights
+🧢 Batsmen Analysis
+
+-Total runs scored
 -Strike rate comparison
 -Role-based classification (Top Order / Middle Order)
+-Top N filtering to dynamically select best performers
 
-Top performers highlighted using Top N filters
-
--Economy vs Strike Rate (Impact Analysis)
+⚡ Economy vs Strike Rate Analysis
 -Scatter plot showing relationship between:
 -Batting Strike Rate
 -Bowling Economy
+-Helps identify high-impact players contributing in multiple ways
 
-Helps identify high-impact players who balance scoring speed with bowling efficiency
-All-Rounder Evaluation
-Combined score derived from:
-Batting Score
-Bowling Score
+🔄 All-Rounder Evaluation
 
-Ensures selection of multi-skill impact players
-
-Final dashboard selects only the best-performing all-rounder
+-Custom All-Rounder Score calculated using:
+-Batting Score
+-Bowling Score
+-Ensures selection of the most impactful all-rounder, not just popular names
 
 🎯 Bowling Unit Analysis
 
-Total wickets taken
+-Wickets taken
+-Overs bowled
+-Bowling strike rate
+-Wicket contribution distribution using bar & pie charts
 
-Overs bowled
+🧠 Key Insights
 
-Bowling strike rate
+-High run scorers are not always the most impactful players
+-Strike rate significantly affects batting contribution
+-Bowlers are evaluated on wicket-taking ability, not just economy
+-All-rounders add value only when both skills contribute meaningfully
 
-Wicket contribution visualized through bar and pie charts
+🛠️ Tools & Technologies Used
 
-Key Insights:-
+Python
+-Pandas
+-NumPy
+Power BI
+-DAX Measures
+-Data Modeling
+-Interactive Visuals
 
--High run scorers are not always the most impactful — strike rate matters
--All-rounders provide balance only when both skills contribute meaningfully
--Bowling attack selection prioritizes wicket-taking ability over volume
+CSV Datasets
+-IPL ball-by-ball data
+-Match-level data
 
-Tools & Technologies Used
--Python (Pandas, NumPy) – Data cleaning & feature engineering
--Power BI – Data modeling, DAX measures & visualization
--CSV datasets – Processed IPL ball-by-ball & match data
+📂 Project Structure
+-ipl-playeranalysis-report/
+-├── data/
+-│   ├── raw/
+-│   └── processed/
+-│       ├── best_xi_batsmen.csv
+-│       ├── best_xi_bowlers.csv
+-│       └── best_xi_allrounders.csv
+-│
+-├── dashboard/
+-│   └── IPL_Best_XI.pbix
+-│
+-└── README.md
 
-Project Structure
-data/
- ├── raw/
- ├── processed/
- │    ├── best_xi_batsmen.csv
- │    ├── best_xi_bowlers.csv
- │    └── best_xi_allrounders.csv
-dashboard/
- └── IPL_Best_XI.pbix
+🚀 Use Cases
 
-final dashboard 
-![Visual](final dash board.PNG)
+-Sports Analytics Portfolio Project
+-IPL Player Performance Analysis
+-Data-driven Team Selection
+-Beginner to Intermediate Sports Analytics Practice
 
+🔮 Future Improvements
+
+-Venue-wise performance analysis
+-Opposition-based player impact
+-Season-wise comparison
+-Match situation (pressure) analysis
